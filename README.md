@@ -21,17 +21,17 @@ Do three simple steps to add yiddish layout to your linux machine.
 
 6. If found add new layout to it. Find <variantList></variantList> and add definition of your layout.
 
-   <variant>
+   `<variant>
     <configItem>
       <name>custom+yiddish_qwerty</name>
       <shortDescription>yi-qw</shortDescription>
       <description>Yiddish (Daniel Nemenyi)</description>
     </configItem>
-   </variant>
+   </variant>`
 
 7. If not found add your variant definition to existing custom layout i the same file.
    Locate *custom* layout. Inside evdev.xml search for <name>custom</name> .
    
-8. Then locate probably empty <variantList/> tag. replace it with a pair of <variantList> and </variantList> and add inside your definition.
+8. Then locate probably empty `<variantList/>` tag. replace it with a pair of `<variantList>` and `</variantList>` and add inside your definition.
 
 
