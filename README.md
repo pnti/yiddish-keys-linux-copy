@@ -1,5 +1,5 @@
-Don't use install scripts which breaks integrity of system files. 
-Do three simple steps to add yiddish layout to your linux machine.
+Don't use install scripts which break integrity of system files. 
+Do these simple steps to add yiddish layout to your linux machine.
 
 1. Open yi.txt in text editor; replace xkb_symbols "yiddish" 
   with xkb_symbols "yiddish_qwerty" . Save and quit.
