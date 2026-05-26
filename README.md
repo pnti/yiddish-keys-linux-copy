@@ -1,4 +1,6 @@
-Don't use install script which breaks the integrity of system files. 
+Don't use install script which breaks the integrity of system files and crashes upgrade scipts. 
+Use dedicated, official mechanism XKB Custom Layouts instead.
+
 Follow these simple steps to add a Yiddish layout to your Linux machine.
 
 1. Open yi.txt in text editor; replace xkb_symbols "yiddish" 
