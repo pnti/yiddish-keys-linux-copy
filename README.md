@@ -7,17 +7,17 @@ Do three simple steps to add yiddish layout to your linux machine.
 2. Copy contents of yiddish camppings contained in yi.txt file to a collective
    custom file:
 
-   cat yi.txt | sudo tee -a /usr/share/X11/xkb/symbols/custom > /dev/null
+   `cat yi.txt | sudo tee -a /usr/share/X11/xkb/symbols/custom > /dev/null`
 
 3. Check new layout in the active session:
 
-   setxkbmap -layout custom -variant yiddish_qwerty
+   `setxkbmap -layout custom -variant yiddish_qwerty`
 
 4. To see this new layout in System Settings you have to register it.
 
 5. Open evdev.xml in a text editor. Try to locate existing yi section.
 
-   grep -n '<name>yi</name>' /usr/share/X11/xkb/rules/evdev.xml
+   `grep -n '<name>yi</name>' /usr/share/X11/xkb/rules/evdev.xml`
 
 6. If found add new layout to it. Find <variantList></variantList> and add definition of your layout.
 
