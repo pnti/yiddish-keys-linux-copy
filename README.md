@@ -1,11 +1,10 @@
-Don't use install scripts which break integrity of system files. 
-Do these simple steps to add yiddish layout to your linux machine.
+Don't use install script which breaks the integrity of system files. 
+Follow these simple steps to add a Yiddish layout to your Linux machine.
 
 1. Open yi.txt in text editor; replace xkb_symbols "yiddish" 
   with xkb_symbols "yiddish_qwerty" . Save and quit.
 
-2. Copy contents of yiddish camppings contained in yi.txt file to a collective
-   custom file:
+2. Copy the contents of the Yiddish mappings contained in the yi.txt file to a collective custom file:
 
    `cat yi.txt | sudo tee -a /usr/share/X11/xkb/symbols/custom > /dev/null`
 
@@ -30,10 +29,9 @@ Do these simple steps to add yiddish layout to your linux machine.
     </configItem>
    </variant>
 
-7. If not found add your variant definition to existing custom layout i the same file.
-   Locate *custom* layout. Inside evdev.xml search for <name>custom</name> .
+7. If not found add your variant definition to the existing custom layout in the same file. Locate *custom* layout. Inside evdev.xml search for <name>custom</name> inside evdev.xml .
    
-8. Then locate probably empty `<variantList/>` tag. replace it with a pair of `<variantList>` and `</variantList>` and add inside your definition.
+8. Then locate probably empty `<variantList/>` tag. Replace it with a pair of `<variantList>` and `</variantList>` tags, and add your definition inside:
 
    ```html
    <variant>
@@ -49,6 +47,6 @@ Do these simple steps to add yiddish layout to your linux machine.
 
 9. Reboot.
 
-10. Add new layout selecting Yiddish language from System Settings > Keyboard > Layout ... Add .
+10. Add the new layout selecting Yiddish language from System Settings > Keyboard > Layout ... Add .
 
 11. Enjoy.
