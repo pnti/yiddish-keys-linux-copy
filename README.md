@@ -1,9 +1,9 @@
 Don't use install script which breaks the integrity of system files and crashes upgrade scipts. 
-Use dedicated, official mechanism XKB Custom Layouts instead.
+Use dedicated, official mechanism *XKB Custom Layouts* instead.
 
 Follow these simple steps to add a Yiddish layout to your Linux machine.
 
-1. Open yi.txt in text editor; replace *xkb_symbols "yiddish"* 
+1. Open yi.txt in a text editor; replace *xkb_symbols "yiddish"* 
   with *xkb_symbols "yiddish_qwerty"* . Save and quit.
 
 2. Copy the contents of the Yiddish mappings contained in the yi.txt file to a collective custom file:
@@ -20,7 +20,7 @@ Follow these simple steps to add a Yiddish layout to your Linux machine.
 
    `grep -n '<name>yi</name>' /usr/share/X11/xkb/rules/evdev.xml`
 
-6. If found add new layout to it. Find <variantList></variantList> and add definition of your layout.
+6. If found, add new layout to it. Find <variantList></variantList> and add definition of your layout.
 
    ```html
    <variant>
@@ -31,7 +31,7 @@ Follow these simple steps to add a Yiddish layout to your Linux machine.
     </configItem>
    </variant>
 
-7. If not found add your variant definition to the existing custom layout in the same file. Locate *custom* layout. Inside evdev.xml search for <name>custom</name> inside evdev.xml .
+7. If not found, add your variant definition to the existing custom layout in the same file. Locate *custom* layout. Inside evdev.xml search for <name>custom</name> inside evdev.xml .
    
 8. Then locate probably empty `<variantList/>` tag. Replace it with a pair of `<variantList>` and `</variantList>` tags, and add your definition inside:
 
@@ -49,6 +49,6 @@ Follow these simple steps to add a Yiddish layout to your Linux machine.
 
 9. Reboot.
 
-10. Add the new layout selecting *Yiddish* language from *System Settings > Keyboard > Layout ... Add* .
+10. Add the new layout selecting the *Yiddish* language from *System Settings > Keyboard > Layout ... Add* .
 
 11. Enjoy.
