@@ -47,4 +47,8 @@ Do these simple steps to add yiddish layout to your linux machine.
       </configItem>
     </variant>
 
+9. Reboot.
 
+10. Add new layout selecting Yiddish language from System Settings > Keyboard > Layout ... Add .
+
+11. Enjoy.
